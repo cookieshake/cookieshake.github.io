@@ -14,3 +14,7 @@ pre.highlight {
 .container {
   max-width: 960px;
 }
+
+#disqus_thread {
+  margin-top: 24px;
+}
