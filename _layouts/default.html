@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ site.title }}</title>
+    {% include links.html %}
+  </head>
+  <body>
+    {% include nav.html %}
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-three-quarters">
+            <div class="content is-medium">
+              {{ content }}
+            </div>
+          </div>
+          <div class="column">
+            {% include sidemenu.html %}
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include footer.html %}
+  </body>
+</html>
