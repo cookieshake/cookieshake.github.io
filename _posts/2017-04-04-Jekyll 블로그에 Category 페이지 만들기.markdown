@@ -133,4 +133,8 @@ axios.get('/posts.json')
 
 현재(2017년 4월) 이 블로그는 이 방식으로 카테고리 페이지를 생성하고 있습니다. 글이 적을 때에는 이 방법도 잘 동작하지만, 글의 갯수가 많아질수록 posts.json이 커지므로 비효율적일 수 있습니다. 그럴 때는 ~~DB를 사용한다던지~~ posts.json을 여러개로 분할하는 등 적절한 방법으로 최적화를 해주시면 될 것 같습니다.
 
+### 참고자료
+[Fully Functional Jekyll Blog](https://www.sitepoint.com/fully-functional-jekyll-blog/)
+[지킬 블로그에 페이지네이션과 태그 등 추가](https://nolboo.kim/blog/2014/01/09/upgrade-jekyll-github-blog/)
+
 {% endraw %}
