@@ -1,6 +1,4 @@
-
 title: cookie.jar
-
 
 author:
   email: cookieshake@hotmail.com
@@ -14,6 +12,7 @@ highlighter: rouge
 permalink: /posts/:title
 
 environment: production
+timezone: Asia/Seoul
 
 # Build settings
 host: 0.0.0.0
