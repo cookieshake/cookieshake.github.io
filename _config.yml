@@ -13,6 +13,8 @@ paginate: 5
 highlighter: rouge
 permalink: /posts/:title
 
+environment: production
+
 # Build settings
 host: 0.0.0.0
 port: 5555
