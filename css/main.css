@@ -1,17 +1,10 @@
-@font-face {
-  font-family: 'Godo';
-  font-style: normal;
-  font-weight: 400;
-  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+body, button, input, select, textarea {
+  font-family: 'Spoqa Han Sans', sans-serif;
 }
 
-@font-face {
-  font-family: 'Godo';
-  font-style: normal;
-  font-weight: 700;
-  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff');
-}
-
-.blog-title {
-  font-family: 'Godo';
+code {
+  font-family: 'Nanum Gothic Coding', monospace;
 }
