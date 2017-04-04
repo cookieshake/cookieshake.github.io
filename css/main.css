@@ -8,3 +8,7 @@ body, button, input, select, textarea {
 code {
   font-family: 'Nanum Gothic Coding', monospace;
 }
+
+.container {
+  max-width: 960px;
+}
