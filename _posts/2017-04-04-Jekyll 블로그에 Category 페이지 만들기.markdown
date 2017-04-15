@@ -2,7 +2,7 @@
 layout: post
 title:  "Jekyll 블로그에 카테고리 페이지 만들기"
 date:   2017-04-04 14:31:00 +0900
-categories: 팁
+categories: jekyll
 tags: jekyll 팁 vue.js axios
 ---
 {% raw %}
