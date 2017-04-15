@@ -2,6 +2,10 @@ body, button, input, select, textarea {
   font-family: 'Spoqa Han Sans', sans-serif;
 }
 
+a {
+  color: #00b89c;
+}
+
 code {
   font-family: 'Nanum Gothic Coding', monospace;
 }
@@ -9,6 +13,7 @@ code {
 pre.highlight {
   border-radius: 4px;
   box-shadow: 0 0 1px;
+  margin-bottom: 20px;
 }
 
 .container {
