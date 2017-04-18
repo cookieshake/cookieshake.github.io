@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "유니코드 표현 섞인 json 파싱하기"
+date:   2017-04-18 23:41:00 +0900
+categories: python
+tags: python json ast
+---
+{% raw %}
+살다보면 json같이 생겼지만 사실 아닌, 아래와 같은 친구들을 만나게 됩니다.
+
+``` python
+{
+  u'pokemon': {
+    u'hp': 42,
+    u'name': u'pikachu'
+  }
+}
+```
+
+이런 친구들은 json인 척 합니다만, 사실 json 규격과는 다른 python의 dict를 문자열로 표현해 놓은 물건입니다. 그래서 `json.loads()`를 사용해서 파싱하려 하면 에러를 뿜어내게 됩니다.
+
+이럴 때를 위한 파이썬 패키지도 있으며, 아래와 같이 사용하시면 됩니다.
+
+``` python
+import ast
+
+s = "{u'name': u'졸리다'}"
+parsed_dict = ast.literal_eval(s)
+
+print(parsed_dict[u'name'])
+```
+
+### 참고자료
+[Parsing invalid Unicode JSON in Python](http://stackoverflow.com/questions/23308248/parsing-invalid-unicode-json-in-python)
+
+{% endraw %}
