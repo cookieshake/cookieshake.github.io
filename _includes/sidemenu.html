@@ -5,7 +5,7 @@
   <ul class="menu-list">
     {% for category in site.categories %}
     <li>
-      <a href="/category#{{ category[0] }}">
+      <a href="/category#{{ category[0] }}" onclick="location.hash='{{ category[0] }}';location.reload()">
         {{ category[0] }}
         <span class="tag is-info is-pulled-right">{{ category[1].size }}</span>
       </a>
