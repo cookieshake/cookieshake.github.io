@@ -2,7 +2,7 @@
 <html>
   <head>
     {% include meta.html %}
-    <title>{{ site.title }}: {{ page.title }}</title>
+    <title>{{ page.title }}</title>
     {% include links.html %}
   </head>
   <body>
@@ -12,7 +12,10 @@
         <div class="columns">
           <div class="column is-three-quarters">
             <h2 class="title is-2">{{ page.title }}</h2>
-            <span>{{ page.date | date: "%Y년 %m월 %d일 %H시 %M분" }}</span>
+            <span>{{ page.date | date: "%Y년 %m월 %d일 %H시 %M분" }}에 씀</span>
+            {% if page.edited %}
+            <br><span>{{ page.edited | date: "%Y년 %m월 %d일 %H시 %M분" }}에 마지막으로 고침</span>
+            {% endif %}
             <hr />
             <div class="content is-medium">
               {{ page.content }}
